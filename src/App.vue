@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <root-view title="Active User Interface" />
+    <root-view title="User Interface" />
   </div>
 </template>
 

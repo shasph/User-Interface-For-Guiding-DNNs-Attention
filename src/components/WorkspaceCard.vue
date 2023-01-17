@@ -78,15 +78,6 @@ export default {
     onSave: function() {
       console.log("onSave");
       this.img_work_status = "done";
-      // end time
-        axios
-        .post("http://localhost:5000/refine-end", {
-          request_type: "refine-start",
-          refine_id: this.id
-        })
-        .catch(function(error) {
-          console.log(error);
-        });
     },
     getActiveCandidate: function(active_candidate_id) {
       this.show_batch_size = active_candidate_id.show_batch_size;

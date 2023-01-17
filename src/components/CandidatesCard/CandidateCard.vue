@@ -55,15 +55,6 @@ export default {
     onClick: function() {
       if (this.img_work_status !== "pending") {
         this.$emit("candidate_activated", this.id);
-        // start time
-        axios
-        .post("http://localhost:5000/refine-start", {
-          request_type: "refine-start",
-          refine_id: this.id
-        })
-        .catch(function(error) {
-          console.log(error);
-        });
       }
     }
   }
